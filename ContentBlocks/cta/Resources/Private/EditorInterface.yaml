@@ -1,0 +1,22 @@
+name: example/cta
+group: common
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true
+  - identifier: bodytext
+    type: Textarea
+    useExistingField: true
+    properties:
+      enableRichtext: true
+  - identifier: link
+    type: Link
+    properties:
+      autocomplete: true
+      allowedTypes: ['page', 'url', 'file']
+      max: 150
+      required: true
+  - identifier: linkTitle
+    type: Text
+    properties:
+      required: true

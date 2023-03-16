@@ -1,0 +1,66 @@
+name: example/icon_group
+group: common
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true
+  - identifier: alignment
+    type: Select
+    properties:
+      renderType: selectSingle
+      items:
+        [
+          [ 'Left', 'left' ],
+          [ 'Center', 'center' ],
+          [ 'Right', 'right' ],
+        ]
+  - identifier: rowItems
+    type: Select
+    properties:
+      renderType: selectSingle
+      items:
+        [
+          [ '1', '1' ],
+          [ '2', '2' ],
+          [ '3', '3' ],
+          [ '4', '4' ],
+        ]
+  - identifier: iconPosition
+    type: Select
+    properties:
+      renderType: selectSingle
+      items:
+        [
+          [ 'Above', 'above' ],
+          [ 'Below', 'below' ],
+          [ 'Left: Top', 'left-top' ],
+          [ 'Left: Center', 'left-center' ],
+          [ 'Right: Top', 'right-top' ],
+          [ 'Right: Center', 'right-center' ],
+        ]
+  - identifier: iconGroupItem
+    type: Collection
+    properties:
+      useAsLabel: title
+      required: true
+      fields:
+        - identifier: title
+          type: Text
+        - identifier: icon
+          type: File
+          properties:
+            maxitems: 1
+            allowed: png,svg,gif
+        - identifier: bodytext
+          type: Textarea
+          properties:
+            enableRichtext: true
+        - identifier: link
+          type: Link
+          properties:
+            autocomplete: true
+            allowedTypes: ['page', 'url', 'file']
+            max: 150
+        - identifier: linkTitle
+          type: Text
+

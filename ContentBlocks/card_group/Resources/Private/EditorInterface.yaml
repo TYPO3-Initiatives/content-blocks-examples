@@ -1,0 +1,52 @@
+name: example/card_group
+group: common
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true
+  - identifier: alignment
+    type: Select
+    properties:
+      renderType: selectSingle
+      items:
+        [
+          [ 'Left', 'left' ],
+          [ 'Center', 'center' ],
+          [ 'Right', 'right' ],
+        ]
+  - identifier: rowItems
+    type: Select
+    properties:
+      renderType: selectSingle
+      items:
+        [
+          [ '1', '1' ],
+          [ '2', '2' ],
+          [ '3', '3' ],
+          [ '4', '4' ],
+        ]
+  - identifier: cardGroupItem
+    type: Collection
+    properties:
+      useAsLabel: title
+      required: true
+      fields:
+        - identifier: image
+          type: File
+        - identifier: title
+          type: Text
+          properties:
+            maxitems: 1
+        - identifier: bodytext
+          type: Textarea
+          properties:
+            enableRichtext: true
+        - identifier: link
+          type: Link
+          properties:
+            autocomplete: true
+            allowedTypes: ['page', 'url', 'file']
+            max: 150
+        - identifier: linkTitle
+          type: Text
+

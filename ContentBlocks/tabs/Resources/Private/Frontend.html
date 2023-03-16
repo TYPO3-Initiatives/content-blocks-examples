@@ -1,0 +1,25 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<cb:asset.css identifier="cbTabsCssFrontend" name="example/tabs" file="Frontend.css"/>
+<cb:asset.script identifier="cbTabsJsFrontend" name="example/tabs" file="Frontend.js"/>
+
+<div class="cb-tabs">
+    <div class="tab">
+        <f:for each="{cb.tabsItem}" as="item">
+            <button class="tab-links" data-target="tab-{item.uid}">
+                {item.title}
+            </button>
+        </f:for>
+    </div>
+    <f:for each="{cb.tabsItem}" as="item">
+        <div id="tab-{item.uid}" class="tab-content">
+            <f:format.raw>{item.textarea}</f:format.raw>
+        </div>
+    </f:for>
+</div>
+
+</html>

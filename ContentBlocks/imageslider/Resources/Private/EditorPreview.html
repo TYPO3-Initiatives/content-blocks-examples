@@ -1,0 +1,15 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<cb:asset.css identifier="cbImagesliderCssBackend" name="example/imageslider" file="EditorPreview.css"/>
+
+<div class="cb-imageslider">
+    <f:for each="{cb.assets}" as="asset">
+        <f:image src="{asset.uid}" height="75" treatIdAsReference="1"/>
+    </f:for>
+</div>
+
+</html>
