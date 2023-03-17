@@ -3,6 +3,11 @@
     --cardgroup-columns: 1;
 }
 
+.cb-card-group .card-group-element-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cb-card-group .card {
     position: relative;
     display: flex;
@@ -14,6 +19,8 @@
     border-radius: 0.25rem;
     color: #212121;
     background: #ffffff;
+    width: 100%;
+    height: 100%;
 }
 
 .cb-card-group .card-body {

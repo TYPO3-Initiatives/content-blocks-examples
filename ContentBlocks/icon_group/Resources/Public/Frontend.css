@@ -1,3 +1,7 @@
+.cb-icon-group {
+    margin: 0 1rem 3rem;
+}
+
 .cb-icon-group .icongroup {
     display: flex;
     flex-wrap: wrap;

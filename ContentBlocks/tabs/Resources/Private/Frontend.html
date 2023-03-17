@@ -9,14 +9,16 @@
 
 <div class="cb-tabs">
     <div class="tab">
-        <f:for each="{cb.tabsItem}" as="item">
-            <button class="tab-links" data-target="tab-{item.uid}">
+        <f:for each="{cb.tabsItem}" as="item" iteration="iter">
+            <button class="tab-links{f:if(condition: iter.isFirst, then: ' active', else: '')}" data-target="tab-{item.uid}">
                 {item.title}
             </button>
         </f:for>
     </div>
-    <f:for each="{cb.tabsItem}" as="item">
-        <div id="tab-{item.uid}" class="tab-content">
+    <f:for each="{cb.tabsItem}" as="item" iteration="iter">
+        <f:variable name="style">style="display:{f:if(condition: iter.isFirst, then: 'block', else: 'none')};"</f:variable>
+
+        <div id="tab-{item.uid}" class="tab-content" {style -> f:format.raw()}>
             <f:format.raw>{item.textarea}</f:format.raw>
         </div>
     </f:for>

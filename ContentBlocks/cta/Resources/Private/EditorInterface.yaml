@@ -20,3 +20,10 @@ fields:
     type: Text
     properties:
       required: true
+  - identifier: backgroundImage
+    type: File
+    properties:
+      maxitems: 1
+      minitems: 1
+      enableImageManipulation: true
+      allowed: common-image-types

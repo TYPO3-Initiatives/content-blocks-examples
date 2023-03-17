@@ -1,3 +1,7 @@
+.cb-tabs {
+    margin: 0 1rem 3rem;
+}
+
 .cb-tabs .tab {
     overflow: hidden;
     border: 1px solid #ccc;
