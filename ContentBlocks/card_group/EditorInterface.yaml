@@ -27,8 +27,8 @@ fields:
         ]
   - identifier: cardGroupItem
     type: Collection
+    useAsLabel: title
     properties:
-      useAsLabel: title
       required: true
       fields:
         - identifier: image
