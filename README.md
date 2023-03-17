@@ -11,7 +11,7 @@ ____
 
 Clone this repository into your local packages directory and run ```composer req contentblocks/examples:^1``` in your project root.
 
-### Installation in lagacy mode
+### Installation in legacy mode (none composer)
 
 Clone this repository into your typo3conf/ext directory and install this extension via the extension manager.
 
@@ -19,7 +19,7 @@ ___
 
 ## List of current Content Blocks examples
 
-This examples are soma small packages, which show how to use the Content Blocks:
+This examples are some small packages, which show how to use the Content Blocks:
 
 * Accordion
 * Card Group
