@@ -6,14 +6,13 @@ fields:
     useExistingField: true
   - identifier: accordionItem
     type: Collection
+    useAsLabel: text
     properties:
-      useAsLabel: text
-      required: true
-      fields:
-        - identifier: text
-          type: Text
-        - identifier: textarea
-          type: Textarea
-          properties:
-            enableRichtext: true
-
+      minitems: 1
+    fields:
+      - identifier: text
+        type: Text
+      - identifier: textarea
+        type: Textarea
+        properties:
+          enableRichtext: true

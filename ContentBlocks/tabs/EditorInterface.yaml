@@ -6,14 +6,13 @@ fields:
     useExistingField: true
   - identifier: tabsItem
     type: Collection
+    useAsLabel: title
     properties:
-      useAsLabel: title
-      required: true
-      fields:
-        - identifier: title
-          type: Text
-        - identifier: textarea
-          type: Textarea
-          properties:
-            enableRichtext: true
-
+      minitems: 1
+    fields:
+      - identifier: title
+        type: Text
+      - identifier: textarea
+        type: Textarea
+        properties:
+          enableRichtext: true

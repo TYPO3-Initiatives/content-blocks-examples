@@ -33,26 +33,26 @@ fields:
     type: Collection
     useAsLabel: title
     properties:
-      required: true
-      fields:
-        - identifier: image
-          type: File
-        - identifier: title
-          type: Text
-          properties:
-            maxitems: 1
-        - identifier: bodytext
-          type: Textarea
-          properties:
-            enableRichtext: true
-        - identifier: palette_link
-          type: Palette
-          fields:
-            - identifier: link
-              type: Link
-              properties:
-                autocomplete: true
-                allowedTypes: ['page', 'url', 'file']
-                max: 150
-            - identifier: linkTitle
-              type: Text
+      minitems: 1
+    fields:
+      - identifier: image
+        type: File
+      - identifier: title
+        type: Text
+        properties:
+          maxitems: 1
+      - identifier: bodytext
+        type: Textarea
+        properties:
+          enableRichtext: true
+      - identifier: palette_link
+        type: Palette
+        fields:
+          - identifier: link
+            type: Link
+            properties:
+              autocomplete: true
+              allowedTypes: ['page', 'url', 'file']
+              max: 150
+          - identifier: linkTitle
+            type: Text

@@ -43,29 +43,29 @@ fields:
             ]
   - identifier: iconGroupItem
     type: Collection
+    useAsLabel: title
     properties:
-      useAsLabel: title
-      required: true
-      fields:
-        - identifier: title
-          type: Text
-        - identifier: icon
-          type: File
-          properties:
-            maxitems: 1
-            allowed: png,svg,gif
-        - identifier: bodytext
-          type: Textarea
-          properties:
-            enableRichtext: true
-        - identifier: link_palette
-          type: Palette
-          fields:
-            - identifier: link
-              type: Link
-              properties:
-                autocomplete: true
-                allowedTypes: ['page', 'url', 'file']
-                max: 150
-            - identifier: linkTitle
-              type: Text
+      minitems: 1
+    fields:
+      - identifier: title
+        type: Text
+      - identifier: icon
+        type: File
+        properties:
+          maxitems: 1
+          allowed: png,svg,gif
+      - identifier: bodytext
+        type: Textarea
+        properties:
+          enableRichtext: true
+      - identifier: link_palette
+        type: Palette
+        fields:
+          - identifier: link
+            type: Link
+            properties:
+              autocomplete: true
+              allowedTypes: ['page', 'url', 'file']
+              max: 150
+          - identifier: linkTitle
+            type: Text
