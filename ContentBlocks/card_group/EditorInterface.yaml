@@ -17,6 +17,7 @@ fields:
               [ 'Center', 'center' ],
               [ 'Right', 'right' ],
             ]
+      - type: Linebreak
       - identifier: rowItems
         type: Select
         properties:
