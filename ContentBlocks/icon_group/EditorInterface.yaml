@@ -12,35 +12,42 @@ fields:
         properties:
           renderType: selectSingle
           items:
-            [
-              [ 'Left', 'left' ],
-              [ 'Center', 'center' ],
-              [ 'Right', 'right' ],
-            ]
+            - label: 'Left'
+              value: 'left'
+            - label: 'Center'
+              value: 'center'
+            - label: 'Right'
+              value: 'right'
       - identifier: rowItems
         type: Select
         properties:
           renderType: selectSingle
           items:
-            [
-              [ '1', '1' ],
-              [ '2', '2' ],
-              [ '3', '3' ],
-              [ '4', '4' ],
-            ]
+            - label: '1'
+              value: '1'
+            - label: '2'
+              value: '2'
+            - label: '3'
+              value: '3'
+            - label: '4'
+              value: '4'
       - identifier: iconPosition
         type: Select
         properties:
           renderType: selectSingle
           items:
-            [
-              [ 'Above', 'above' ],
-              [ 'Below', 'below' ],
-              [ 'Left: Top', 'left-top' ],
-              [ 'Left: Center', 'left-center' ],
-              [ 'Right: Top', 'right-top' ],
-              [ 'Right: Center', 'right-center' ],
-            ]
+            - label: Above
+              value: above
+            - label: Below
+              value: below
+            - label: 'Left: Top'
+              value: left-top
+            - label: 'Left: Center'
+              value: left-center
+            - label: 'Right: Top'
+              value: right-top
+            - label: 'Right: Center'
+              value: right-center
   - identifier: iconGroupItem
     type: Collection
     useAsLabel: title
@@ -65,7 +72,10 @@ fields:
             type: Link
             properties:
               autocomplete: true
-              allowedTypes: ['page', 'url', 'file']
+              allowedTypes:
+                - page
+                - url
+                - file
               max: 150
           - identifier: linkTitle
             type: Text
