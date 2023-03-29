@@ -2,7 +2,6 @@ name: example/icon_group
 group: common
 fields:
   - identifier: header
-    type: Text
     useExistingField: true
   - identifier: palette_1
     type: Palette
