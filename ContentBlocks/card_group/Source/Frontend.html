@@ -8,7 +8,7 @@
 
 <div class="cb-card-group">
     <f:if condition="{cb.cardGroupItem}">
-        <div class="card-group-element card-group-element-align-{cb.alignment} card-group-element-columns-{cb.rowItems}">
+        <div class="card-group-element card-group-element-align-{cb.settings.alignment} card-group-element-columns-{cb.settings.rowItems}">
             <f:for each="{cb.cardGroupItem}" as="item" iteration="iteration">
 
                 <div class="card-group-element-item">
@@ -34,11 +34,11 @@
                             <f:variable name="link_title">
                                 <f:if condition="{item.linkTitle}">
                                     <f:then>{item.linkTitle}</f:then>
-                                    <f:else><cb:translate name="example/card_group" key="readmore"/></f:else>
+                                    <f:else><cb:translate key="readmore"/></f:else>
                                 </f:if>
                             </f:variable>
                             <div class="card-footer">
-                                <f:link.typolink parameter="{item.link}" class="btn" title="{link_title -> f:format.trim()}">
+                                <f:link.typolink parameter="{item.link}" class="btn" title="{link_title}">
                                     <span class="btn-text">
                                         {link_title}
                                     </span>
@@ -56,7 +56,7 @@
 
     <f:if condition="{link}">
         <f:then>
-            <f:link.typolink parameter="{link}" title="{linkTitle -> f:format.trim()}">{content -> f:format.raw()}</f:link.typolink>
+            <f:link.typolink parameter="{link}" title="{linkTitle}">{content -> f:format.raw()}</f:link.typolink>
         </f:then>
         <f:else>
             {content -> f:format.raw()}

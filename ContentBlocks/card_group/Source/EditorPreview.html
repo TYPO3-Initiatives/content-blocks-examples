@@ -9,7 +9,7 @@
 
 <div class="cb-card-group">
     <f:if condition="{cb.cardGroupItem}">
-        <div class="card-group-element card-group-element-align-{cb.alignment} card-group-element-columns-{cb.rowItems}">
+        <div class="card-group-element card-group-element-align-{cb.settings.alignment} card-group-element-columns-{cb.settings.rowItems}">
             <f:for each="{cb.cardGroupItem}" as="item" iteration="iteration">
 
                 <div class="card-group-element-item">
@@ -17,34 +17,28 @@
                         <div class="card">
                             <f:if condition="{item.image.0}">
                                 <div class="card-img-top">
-                                    <f:render partial="LinkWrap" arguments="{link: item.link, linkTitle: item.title}" contentAs="content">
-                                        <f:image image="{item.image.0}" width="400"/>
-                                    </f:render>
+                                    <f:image image="{item.image.0}" width="400"/>
                                 </div>
                             </f:if>
                             <div class="card-body">
                                 <h3 class="card-title">
-                                    <f:render partial="LinkWrap" arguments="{link: item.link, linkTitle: item.title}" contentAs="content">
-                                        {item.title}
-                                    </f:render>
+                                    {item.title}
                                 </h3>
                                 <f:if condition="{item.bodytext}">
-                                    <f:format.raw>{item.bodytext}</f:format.raw>
+                                    <f:transform.html>{item.bodytext}</f:transform.html>
                                 </f:if>
                             </div>
                             <f:if condition="{item.link}">
                                 <f:variable name="link_title">
                                     <f:if condition="{item.linkTitle}">
                                         <f:then>{item.linkTitle}</f:then>
-                                        <f:else><cb:translate name="example/card_group" key="readmore"/></f:else>
+                                        <f:else><cb:translate key="readmore"/></f:else>
                                     </f:if>
                                 </f:variable>
                                 <div class="card-footer">
-                                    <f:link.typolink parameter="{item.link}" class="btn" title="{link_title -> f:format.trim()}">
                                     <span class="btn-text">
                                         {link_title}
                                     </span>
-                                    </f:link.typolink>
                                 </div>
                             </f:if>
                         </div>

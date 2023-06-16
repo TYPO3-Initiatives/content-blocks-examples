@@ -3,8 +3,8 @@ group: common
 fields:
   - identifier: header
     useExistingField: true
-  - identifier: palette_1
-    type: Palette
+  - identifier: settings
+    type: FlexForm
     fields:
       - identifier: alignment
         type: Select
@@ -17,7 +17,6 @@ fields:
               value: 'center'
             - label: 'Right'
               value: 'right'
-      - type: Linebreak
       - identifier: rowItems
         type: Select
         properties:
@@ -41,8 +40,6 @@ fields:
         type: File
       - identifier: title
         type: Text
-        properties:
-          maxitems: 1
       - identifier: bodytext
         type: Textarea
         properties:
@@ -53,11 +50,10 @@ fields:
           - identifier: link
             type: Link
             properties:
-              autocomplete: true
               allowedTypes:
                 - page
                 - url
                 - file
-              max: 150
           - identifier: linkTitle
             type: Text
+            eval: 'trim'
