@@ -1,6 +1,7 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
     data-namespace-typo3-fluid="true"
 >
 
@@ -8,12 +9,11 @@
 
 <div class="cb-accordion">
     <f:for each="{cb.accordionItem}" as="item">
-        <button class="accordion-item">
-            {item.text}
-        </button>
-        <div class="panel">
-            <f:format.raw>{item.textarea}</f:format.raw>
-        </div>
+        <be:link.editRecord uid="{item.uid}" table="example_accordion_accordionItem">
+            <div class="accordion-item">
+                {item.text}
+            </div>
+        </be:link.editRecord>
     </f:for>
 </div>
 
