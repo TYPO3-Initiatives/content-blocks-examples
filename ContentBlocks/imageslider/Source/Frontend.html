@@ -13,7 +13,7 @@
         <ul class="slider-container">
             <f:for each="{cb.assets}" as="asset">
                 <li class="slide-visible">
-                    <f:image src="{asset.uid}" treatIdAsReference="1" alt="{asset.alternative}" loading="lazy"/>
+                    <f:image image="{asset}" loading="lazy"/>
                 </li>
             </f:for>
         </ul>
@@ -22,8 +22,8 @@
         <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
 
         <div class="slider-indicators">
-            <f:for each="{cb.assets}" as="asset" iteration="it">
-                <button aria-label="Go to slide" {f:if(condition: it.isFirst, then: 'class="active"')}></button>
+            <f:for each="{cb.assets}" as="asset" iteration="i">
+                <button aria-label="Go to slide {i.cycle}" class="{f:if(condition: i.isFirst, then: 'active')}"></button>
             </f:for>
         </div>
     </div>

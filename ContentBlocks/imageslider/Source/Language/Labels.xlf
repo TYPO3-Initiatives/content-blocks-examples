@@ -1,23 +1,20 @@
 <?xml version="1.0"?>
 <xliff version="1.0">
-  <file datatype="plaintext"
-        original="messages"
-        source-language="en"
-        product-name="imageslider">
-    <header/>
-    <body>
-      <trans-unit id="example.imageslider.title" xml:space="preserve">
+	<file datatype="plaintext" original="messages" source-language="en" product-name="imageslider">
+		<header/>
+		<body>
+			<trans-unit id="example.imageslider.title" xml:space="preserve">
 				<source>Imageslider</source>
 			</trans-unit>
-      <trans-unit id="example.imageslider.description" xml:space="preserve">
+			<trans-unit id="example.imageslider.description" xml:space="preserve">
 				<source>Add an imageslider based on Swiffy Slider</source>
 			</trans-unit>
-	  <trans-unit id="header.label" xml:space="preserve">
+			<trans-unit id="header.label" xml:space="preserve">
 				<source>Header</source>
 			</trans-unit>
-      <trans-unit id="assets.label" xml:space="preserve">
+			<trans-unit id="assets.label" xml:space="preserve">
 				<source>Assets</source>
 			</trans-unit>
-    </body>
-  </file>
+		</body>
+	</file>
 </xliff>
