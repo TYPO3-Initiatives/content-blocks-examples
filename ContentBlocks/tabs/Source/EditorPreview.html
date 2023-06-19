@@ -16,7 +16,7 @@
     </div>
     <f:for each="{cb.tabsItem}" as="item">
         <div id="tab-{item.uid}" class="tab-content">
-            <f:format.raw>{item.textarea}</f:format.raw>
+            <f:transform.html>{item.textarea}</f:transform.html>
         </div>
     </f:for>
 </div>
