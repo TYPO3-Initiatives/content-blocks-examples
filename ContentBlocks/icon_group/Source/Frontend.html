@@ -8,12 +8,12 @@
 
 <div class="cb-icon-group">
     <f:if condition="{cb.iconGroupItem}">
-        <div class="icongroup icongroup-align-{cb.alignment} icongroup-columns-{cb.rowItems} icongroup-iconposition-{cb.iconPosition}">
+        <div class="icongroup icongroup-align-{cb.pi_flexform.alignment} icongroup-columns-{cb.pi_flexform.rowItems} icongroup-iconposition-{cb.pi_flexform.iconPosition}">
             <f:for each="{cb.iconGroupItem}" as="item" iteration="iteration">
                 <div class="icongroup-item">
                     <f:if condition="{item.icon}">
                         <div class="icongroup-item-icon">
-                            <f:image src="{item.icon.0.uid}" treatIdAsReference="1" height="50"/>
+                            <f:image image="{item.icon.0}" height="50"/>
                         </div>
                     </f:if>
                     <div class="icongroup-item-text">
@@ -23,7 +23,7 @@
                             </f:render>
                         </h4>
                         <f:if condition="{item.bodytext}">
-                            <f:format.raw>{item.bodytext}</f:format.raw>
+                            <f:format.html>{item.bodytext}</f:format.html>
                         </f:if>
                     </div>
                 </div>

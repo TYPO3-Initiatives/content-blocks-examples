@@ -3,8 +3,9 @@ group: common
 fields:
   - identifier: header
     useExistingField: true
-  - identifier: palette_1
-    type: Palette
+  - identifier: pi_flexform
+    useExistingField: true
+    type: FlexForm
     fields:
       - identifier: alignment
         type: Select
@@ -35,9 +36,9 @@ fields:
         properties:
           renderType: selectSingle
           items:
-            - label: Above
+            - label: 'Above'
               value: above
-            - label: Below
+            - label: 'Below'
               value: below
             - label: 'Left: Top'
               value: left-top
