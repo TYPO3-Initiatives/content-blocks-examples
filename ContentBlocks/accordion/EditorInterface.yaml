@@ -1,17 +1,19 @@
 name: example/accordion
 group: common
 fields:
-  - identifier: header
+  -
+    identifier: header
     useExistingField: true
-  - identifier: accordionItem
+  -
+    identifier: accordionItem
     type: Collection
     useAsLabel: text
-    properties:
-      minitems: 1
+    minitems: 1
     fields:
-      - identifier: text
+      -
+        identifier: text
         type: Text
-      - identifier: textarea
+      -
+        identifier: textarea
         type: Textarea
-        properties:
-          enableRichtext: true
+        enableRichtext: true

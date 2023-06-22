@@ -1,59 +1,72 @@
 name: example/card_group
 group: common
 fields:
-  - identifier: header
+  -
+    identifier: header
     useExistingField: true
-  - identifier: settings
+  -
+    identifier: settings
     type: FlexForm
     fields:
-      - identifier: alignment
+      -
+        identifier: alignment
         type: Select
-        properties:
-          renderType: selectSingle
-          items:
-            - label: 'Left'
-              value: 'left'
-            - label: 'Center'
-              value: 'center'
-            - label: 'Right'
-              value: 'right'
-      - identifier: rowItems
+        renderType: selectSingle
+        items:
+          -
+            label: 'Left'
+            value: 'left'
+          -
+            label: 'Center'
+            value: 'center'
+          -
+            label: 'Right'
+            value: 'right'
+      -
+        identifier: rowItems
         type: Select
-        properties:
-          renderType: selectSingle
-          items:
-            - label: '1'
-              value: '1'
-            - label: '2'
-              value: '2'
-            - label: '3'
-              value: '3'
-            - label: '4'
-              value: '4'
-  - identifier: cardGroupItem
+        renderType: selectSingle
+        items:
+          -
+            label: '1'
+            value: '1'
+          -
+            label: '2'
+            value: '2'
+          -
+            label: '3'
+            value: '3'
+          -
+            label: '4'
+            value: '4'
+  -
+    identifier: cardGroupItem
     type: Collection
     useAsLabel: title
-    properties:
-      minitems: 1
+    minitems: 1
     fields:
-      - identifier: image
+      -
+        identifier: image
         type: File
-      - identifier: title
+      -
+        identifier: title
         type: Text
-      - identifier: bodytext
+      -
+        identifier: bodytext
         type: Textarea
-        properties:
-          enableRichtext: true
-      - identifier: palette_link
+        enableRichtext: true
+      -
+        identifier: palette_link
         type: Palette
         fields:
-          - identifier: link
+          -
+            identifier: link
             type: Link
-            properties:
-              allowedTypes:
-                - page
-                - url
-                - file
-          - identifier: linkTitle
+            allowedTypes:
+              - page
+              - url
+              - file
+          -
+            identifier: linkTitle
             type: Text
             eval: 'trim'
