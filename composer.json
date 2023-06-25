@@ -18,20 +18,14 @@
 		"sort-packages": true
 	},
 	"require": {
-		"typo3/cms-content-blocks": "12.3.*@dev"
-	},
-	"conflict": {
-
+		"typo3/cms-content-blocks": "13.0.*@dev"
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-main": "12.3.x-dev"
+			"dev-main": "13.0.x-dev"
 		},
 		"typo3/cms": {
-			"extension-key": "content_blocks_examples",
-			"Package": {
-				"partOfFactoryDefault": false
-			}
+			"extension-key": "content_blocks_examples"
 		}
 	},
 	"autoload": {
