@@ -7,7 +7,7 @@ fields:
   -
     identifier: accordionItem
     type: Collection
-    useAsLabel: text
+    labelField: text
     minitems: 1
     fields:
       -

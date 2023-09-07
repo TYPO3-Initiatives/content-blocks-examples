@@ -42,7 +42,7 @@ fields:
   -
     identifier: cardGroupItem
     type: Collection
-    useAsLabel: title
+    labelField: title
     minitems: 1
     fields:
       -

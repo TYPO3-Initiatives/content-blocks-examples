@@ -7,7 +7,7 @@ fields:
   -
     identifier: tabsItem
     type: Collection
-    useAsLabel: title
+    labelField: title
     minitems: 1
     fields:
       -
