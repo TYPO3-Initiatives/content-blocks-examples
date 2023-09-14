@@ -8,7 +8,7 @@
 <cb:asset.css identifier="cbAccordionCssBackend" file="EditorPreview.css"/>
 
 <div class="cb-accordion">
-    <f:for each="{cb.accordionItem}" as="item">
+    <f:for each="{data.accordionItem}" as="item">
         <be:link.editRecord uid="{item.uid}" table="example_accordion_accordionItem">
             <div class="accordion-item">
                 {item.text}

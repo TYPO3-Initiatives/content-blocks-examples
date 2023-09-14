@@ -7,9 +7,9 @@
 <cb:asset.css identifier="cbCardGroupCssFrontend" file="Frontend.css"/>
 
 <div class="cb-card-group">
-    <f:if condition="{cb.cardGroupItem}">
-        <div class="card-group-element card-group-element-align-{cb.settings.alignment} card-group-element-columns-{cb.settings.rowItems}">
-            <f:for each="{cb.cardGroupItem}" as="item" iteration="iteration">
+    <f:if condition="{data.cardGroupItem}">
+        <div class="card-group-element card-group-element-align-{data.settings.alignment} card-group-element-columns-{data.settings.rowItems}">
+            <f:for each="{data.cardGroupItem}" as="item" iteration="iteration">
 
                 <div class="card-group-element-item">
                     <div class="card">

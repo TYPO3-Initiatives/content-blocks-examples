@@ -7,9 +7,9 @@
 <cb:asset.css identifier="cbIconGroupCssFrontend" file="Frontend.css"/>
 
 <div class="cb-icon-group">
-    <f:if condition="{cb.iconGroupItem}">
-        <div class="icongroup icongroup-align-{cb.pi_flexform.alignment} icongroup-columns-{cb.pi_flexform.rowItems} icongroup-iconposition-{cb.pi_flexform.iconPosition}">
-            <f:for each="{cb.iconGroupItem}" as="item" iteration="iteration">
+    <f:if condition="{data.iconGroupItem}">
+        <div class="icongroup icongroup-align-{data.pi_flexform.alignment} icongroup-columns-{data.pi_flexform.rowItems} icongroup-iconposition-{data.pi_flexform.iconPosition}">
+            <f:for each="{data.iconGroupItem}" as="item" iteration="iteration">
                 <div class="icongroup-item">
                     <f:if condition="{item.icon}">
                         <div class="icongroup-item-icon">

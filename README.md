@@ -8,7 +8,7 @@ ____
 
 ### Installation using Composer
 
-Clone this repository into your local packages directory and run ```composer req contentblocks/examples:^1``` in your project root.
+Clone this repository into your local packages directory and run `composer req contentblocks/examples:^1` in your project root.
 
 ### Installation in legacy mode (none composer)
 
@@ -18,7 +18,7 @@ ___
 
 ## List of current Content Blocks examples
 
-This examples are some small packages, which show how to use the Content Blocks:
+These examples are some small packages, which show how to use the Content Blocks:
 
 * Accordion
 * Card Group

@@ -8,13 +8,13 @@
 
 <div class="cb-tabs">
     <div class="tab">
-        <f:for each="{cb.tabsItem}" as="item">
+        <f:for each="{data.tabsItem}" as="item">
             <button class="tab-links" data-target="tab-{item.uid}">
                 {item.title}
             </button>
         </f:for>
     </div>
-    <f:for each="{cb.tabsItem}" as="item">
+    <f:for each="{data.tabsItem}" as="item">
         <div id="tab-{item.uid}" class="tab-content">
             <f:transform.html>{item.textarea}</f:transform.html>
         </div>
