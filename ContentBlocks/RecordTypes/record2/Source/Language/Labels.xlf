@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xliff version="1.0">
+	<file datatype="plaintext" original="messages" source-language="en" product-name="record1">
+		<header/>
+		<body>
+			<trans-unit id="hov.record2.title" xml:space="preserve">
+				<source>Record 2</source>
+			</trans-unit>
+			<trans-unit id="hov.record2.description" xml:space="preserve">
+				<source>This is your content block description</source>
+			</trans-unit>
+			<trans-unit id="title.label" xml:space="preserve">
+				<source>Custom title 2</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,17 @@
+name: hov/notype
+table: notype
+security:
+  ignorePageTypeRestriction: true
+fields:
+  -
+    identifier: title
+    type: Text
+  -
+    identifier: text
+    type: Textarea
+  -
+    identifier: image
+    type: File
+  -
+    identifier: text3
+    type: Textarea
