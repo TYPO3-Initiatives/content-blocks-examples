@@ -1,19 +1,14 @@
 name: example/tabs
-group: common
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
-  -
-    identifier: tabsItem
+  - identifier: tabsItem
     type: Collection
     labelField: title
     minitems: 1
     fields:
-      -
-        identifier: title
+      - identifier: title
         type: Text
-      -
-        identifier: textarea
+      - identifier: textarea
         type: Textarea
         enableRichtext: true

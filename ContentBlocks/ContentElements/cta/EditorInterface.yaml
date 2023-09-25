@@ -1,15 +1,12 @@
 name: example/cta
 group: common
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
-  -
-    identifier: bodytext
+  - identifier: bodytext
     useExistingField: true
     enableRichtext: true
-  -
-    identifier: link
+  - identifier: link
     type: Link
     autocomplete: true
     allowedTypes:
@@ -18,12 +15,10 @@ fields:
       - file
     max: 150
     required: true
-  -
-    identifier: linkTitle
+  - identifier: linkTitle
     type: Text
     required: true
-  -
-    identifier: backgroundImage
+  - identifier: backgroundImage
     type: File
     enableImageManipulation: true
     maxitems: 1

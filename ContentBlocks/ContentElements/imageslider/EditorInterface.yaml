@@ -1,10 +1,7 @@
 name: example/imageslider
-group: common
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
-  -
-    identifier: assets
+  - identifier: assets
     useExistingField: true
     allowed: jpg,jpeg,png,svg,gif

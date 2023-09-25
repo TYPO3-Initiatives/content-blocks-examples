@@ -1,72 +1,53 @@
 name: example/card_group
-group: common
 fields:
-  -
-    identifier: header
+  - identifier: header
     useExistingField: true
-  -
-    identifier: settings
+  - identifier: settings
     type: FlexForm
     fields:
-      -
-        identifier: alignment
+      - identifier: alignment
         type: Select
         renderType: selectSingle
         items:
-          -
-            label: 'Left'
+          - label: 'Left'
             value: 'left'
-          -
-            label: 'Center'
+          - label: 'Center'
             value: 'center'
-          -
-            label: 'Right'
+          - label: 'Right'
             value: 'right'
-      -
-        identifier: rowItems
+      - identifier: rowItems
         type: Select
         renderType: selectSingle
         items:
-          -
-            label: '1'
+          - label: '1'
             value: '1'
-          -
-            label: '2'
+          - label: '2'
             value: '2'
-          -
-            label: '3'
+          - label: '3'
             value: '3'
-          -
-            label: '4'
+          - label: '4'
             value: '4'
-  -
-    identifier: cardGroupItem
+  - identifier: cardGroupItem
     type: Collection
     labelField: title
     minitems: 1
     fields:
-      -
-        identifier: image
+      - identifier: image
         type: File
-      -
-        identifier: title
+      - identifier: title
         type: Text
-      -
-        identifier: bodytext
+      - identifier: bodytext
         type: Textarea
         enableRichtext: true
-      -
-        identifier: palette_link
+      - identifier: palette_link
         type: Palette
         fields:
-          -
-            identifier: link
+          - identifier: link
             type: Link
             allowedTypes:
               - page
               - url
               - file
-          -
-            identifier: linkTitle
+          - identifier: linkTitle
             type: Text
             eval: 'trim'
