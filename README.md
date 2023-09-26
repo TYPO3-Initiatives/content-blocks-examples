@@ -20,9 +20,20 @@ ___
 
 These examples are some small packages, which show how to use the Content Blocks:
 
+### Content Elements
+
 * Accordion
 * Card Group
 * CTA
 * Icon Group
 * Imageslider
 * Tabs
+
+### Page Types
+
+* One example page type
+
+### Record Types
+
+* Record "notype" with only one type
+* "record1" and "record2" show an example with 2 types
