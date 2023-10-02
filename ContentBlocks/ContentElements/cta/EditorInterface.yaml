@@ -15,10 +15,10 @@ fields:
       - file
     max: 150
     required: true
-  - identifier: linkTitle
+  - identifier: link_title
     type: Text
     required: true
-  - identifier: backgroundImage
+  - identifier: background_image
     type: File
     enableImageManipulation: true
     maxitems: 1

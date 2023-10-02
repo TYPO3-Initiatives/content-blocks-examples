@@ -1,4 +1,4 @@
-name: example/icon_group
+name: example/icon-group
 fields:
   - identifier: header
     useExistingField: true
@@ -16,7 +16,7 @@ fields:
             value: 'center'
           - label: 'Right'
             value: 'right'
-      - identifier: rowItems
+      - identifier: row_items
         type: Select
         renderType: selectSingle
         items:
@@ -28,7 +28,7 @@ fields:
             value: '3'
           - label: '4'
             value: '4'
-      - identifier: iconPosition
+      - identifier: icon_position
         type: Select
         renderType: selectSingle
         items:
@@ -44,7 +44,7 @@ fields:
             value: right-top
           - label: 'Right: Center'
             value: right-center
-  - identifier: iconGroupItem
+  - identifier: icon_group_item
     type: Collection
     labelField: title
     minitems: 1
@@ -69,5 +69,5 @@ fields:
               - url
               - file
             max: 150
-          - identifier: linkTitle
+          - identifier: link_title
             type: Text

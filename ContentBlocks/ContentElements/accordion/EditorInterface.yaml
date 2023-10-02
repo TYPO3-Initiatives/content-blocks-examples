@@ -2,7 +2,7 @@ name: example/accordion
 fields:
   - identifier: header
     useExistingField: true
-  - identifier: accordionItem
+  - identifier: accordion_item
     type: Collection
     labelField: text
     minitems: 1

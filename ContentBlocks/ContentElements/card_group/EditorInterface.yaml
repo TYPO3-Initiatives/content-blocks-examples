@@ -1,4 +1,4 @@
-name: example/card_group
+name: example/card-group
 fields:
   - identifier: header
     useExistingField: true
@@ -15,7 +15,7 @@ fields:
             value: 'center'
           - label: 'Right'
             value: 'right'
-      - identifier: rowItems
+      - identifier: row_items
         type: Select
         renderType: selectSingle
         items:
@@ -27,7 +27,7 @@ fields:
             value: '3'
           - label: '4'
             value: '4'
-  - identifier: cardGroupItem
+  - identifier: card_group_item
     type: Collection
     labelField: title
     minitems: 1
@@ -48,6 +48,6 @@ fields:
               - page
               - url
               - file
-          - identifier: linkTitle
+          - identifier: link_title
             type: Text
             eval: 'trim'

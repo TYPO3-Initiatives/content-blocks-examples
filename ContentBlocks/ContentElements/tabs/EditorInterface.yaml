@@ -2,7 +2,7 @@ name: example/tabs
 fields:
   - identifier: header
     useExistingField: true
-  - identifier: tabsItem
+  - identifier: tabs_item
     type: Collection
     labelField: title
     minitems: 1
