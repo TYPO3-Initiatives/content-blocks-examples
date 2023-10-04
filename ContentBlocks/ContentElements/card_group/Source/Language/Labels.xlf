@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <xliff version="1.0">
-	<file datatype="plaintext" original="messages" source-language="en" product-name="card_group">
+	<file datatype="plaintext" original="messages" source-language="en" product-name="card-group">
 		<header/>
 		<body>
-			<trans-unit id="example.card_group.title" xml:space="preserve">
+			<trans-unit id="example.card-group.title" xml:space="preserve">
 				<source>Card Group</source>
 			</trans-unit>
-			<trans-unit id="example.card_group.description" xml:space="preserve">
+			<trans-unit id="example.card-group.description" xml:space="preserve">
 				<source>Add a group with several cards</source>
 			</trans-unit>
 			<trans-unit id="header.label" xml:space="preserve">
