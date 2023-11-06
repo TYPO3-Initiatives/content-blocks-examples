@@ -13,14 +13,14 @@
 				<source>Header</source>
 			</trans-unit>
 			<trans-unit id="tabs_item.label" xml:space="preserve">
-			<source>Tabs items</source>
-		</trans-unit>
+				<source>Tabs items</source>
+			</trans-unit>
 			<trans-unit id="tabs_item.title.label" xml:space="preserve">
-			<source>Title</source>
-		</trans-unit>
+				<source>Title</source>
+			</trans-unit>
 			<trans-unit id="tabs_item.textarea.label" xml:space="preserve">
-			<source>Content</source>
-		</trans-unit>
+				<source>Content</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
