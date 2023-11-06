@@ -8,7 +8,7 @@
 
 <div class="cb-icon-group">
     <f:if condition="{data.icon_group_item}">
-        <div class="icongroup icongroup-align-{data.pi_flexform.alignment} icongroup-columns-{data.pi_flexform.rowItems} icongroup-iconposition-{data.pi_flexform.iconPosition}">
+        <div class="icongroup icongroup-align-{data.pi_flexform.alignment} icongroup-columns-{data.pi_flexform.row_items} icongroup-iconposition-{data.pi_flexform.icon_position}">
             <f:for each="{data.icon_group_item}" as="item" iteration="iteration">
                 <div class="icongroup-item">
                     <f:if condition="{item.icon}">
@@ -18,7 +18,7 @@
                     </f:if>
                     <div class="icongroup-item-text">
                         <h4 class="icongroup-item-text-header">
-                            <f:render section="LinkWrap" arguments="{link: item.link, linkTitle: item.linkTitle}" contentAs="content">
+                            <f:render section="LinkWrap" arguments="{link: item.link, link_title: item.link_title}" contentAs="content">
                                 {item.title}
                             </f:render>
                         </h4>
@@ -36,7 +36,7 @@
 
     <f:if condition="{link}">
         <f:then>
-            <f:link.typolink parameter="{link}" title="{linkTitle -> f:format.trim()}">
+            <f:link.typolink parameter="{link}" title="{link_title -> f:format.trim()}">
                 {content -> f:format.raw()}
             </f:link.typolink>
         </f:then>

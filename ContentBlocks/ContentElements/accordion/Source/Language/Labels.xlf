@@ -12,13 +12,13 @@
 			<trans-unit id="header.label" xml:space="preserve">
 				<source>Header</source>
 			</trans-unit>
-			<trans-unit id="accordionItem.label" xml:space="preserve">
+			<trans-unit id="accordion_item.label" xml:space="preserve">
 				<source>Accordion items</source>
 			</trans-unit>
-			<trans-unit id="accordionItem.text.label" xml:space="preserve">
+			<trans-unit id="accordion_item.text.label" xml:space="preserve">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="accordionItem.textarea.label" xml:space="preserve">
+			<trans-unit id="accordion_item.textarea.label" xml:space="preserve">
 				<source>Content</source>
 			</trans-unit>
 		</body>

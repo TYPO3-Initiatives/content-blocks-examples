@@ -12,13 +12,13 @@
 			<trans-unit id="header.label" xml:space="preserve">
 				<source>Header</source>
 			</trans-unit>
-			<trans-unit id="tabsItem.label" xml:space="preserve">
+			<trans-unit id="tabs_item.label" xml:space="preserve">
 			<source>Tabs items</source>
 		</trans-unit>
-			<trans-unit id="tabsItem.title.label" xml:space="preserve">
+			<trans-unit id="tabs_item.title.label" xml:space="preserve">
 			<source>Title</source>
 		</trans-unit>
-			<trans-unit id="tabsItem.textarea.label" xml:space="preserve">
+			<trans-unit id="tabs_item.textarea.label" xml:space="preserve">
 			<source>Content</source>
 		</trans-unit>
 		</body>
