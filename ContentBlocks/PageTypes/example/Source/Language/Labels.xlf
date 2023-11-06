@@ -9,6 +9,6 @@
 			<trans-unit id="example.example-page-type.description" xml:space="preserve">
 				<source>This is your page type description</source>
 			</trans-unit>
-        </body>
+		</body>
 	</file>
 </xliff>
