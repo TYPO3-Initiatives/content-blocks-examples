@@ -9,7 +9,7 @@
 
 <div class="cb-accordion">
     <f:for each="{data.accordion_item}" as="item">
-        <be:link.editRecord uid="{item.uid}" table="example_accordion_accordion_item">
+        <be:link.editRecord uid="{item.uid}" table="{item.tableName}">
             <div class="accordion-item">
                 {item.text}
             </div>

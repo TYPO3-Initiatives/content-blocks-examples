@@ -13,7 +13,7 @@
             <f:for each="{data.card_group_item}" as="item" iteration="iteration">
 
                 <div class="card-group-element-item">
-                    <be:link.editRecord uid="{item.uid}" table="example_card_group_card_group_item">
+                    <be:link.editRecord uid="{item.uid}" table="{item.tableName}">
                         <div class="card">
                             <f:if condition="{item.image.0}">
                                 <div class="card-img-top">
