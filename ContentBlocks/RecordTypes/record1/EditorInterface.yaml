@@ -32,15 +32,11 @@ appendLabelAtCopy: banana
 hideAtCopy: true
 priority: 40
 fields:
-  -
-    identifier: title
+  - identifier: title
     type: Text
-  -
-    identifier: text
+  - identifier: text
     type: Textarea
-  -
-    identifier: image
+  - identifier: image
     type: File
-  -
-    identifier: text3
+  - identifier: text3
     type: Textarea
