@@ -2,7 +2,7 @@
 	"name": "contentblocks/examples",
 	"type": "typo3-cms-extension",
 	"version": "1.0.0",
-	"description": "Example content blocks for TYPO3 CMS Content Blocks.",
+	"description": "TYPO3 CMS Content Blocks examples",
 	"homepage": "https://typo3.org",
 	"license": ["GPL-2.0-or-later"],
 	"authors": [{
