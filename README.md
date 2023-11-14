@@ -2,6 +2,8 @@
 
 This a TYPO3 extension, which contains examples for the Content Blocks in version 12.
 It delivers some examples, which you can use to test and play around to get a feeling how it works.
+
+The repository for Content Blocks can be found here: https://github.com/nhovratov/content-blocks
 ____
 
 ## Installation
