@@ -38,5 +38,6 @@ fields:
     type: Textarea
   - identifier: image
     type: File
+    extendedPalette: false
   - identifier: text3
     type: Textarea
