@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="record1">
 		<header/>
 		<body>
-			<trans-unit id="hov.record1.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>Record 1</source>
 			</trans-unit>
-			<trans-unit id="hov.record1.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>This is your content block description</source>
 			</trans-unit>
 			<trans-unit id="title.label" xml:space="preserve">

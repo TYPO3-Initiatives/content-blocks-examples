@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="example">
 		<header/>
 		<body>
-			<trans-unit id="example.example-page-type.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>My custom page type</source>
 			</trans-unit>
-			<trans-unit id="example.example-page-type.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>This is your page type description</source>
 			</trans-unit>
 		</body>

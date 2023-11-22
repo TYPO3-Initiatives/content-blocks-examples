@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="icon-group">
 		<header/>
 		<body>
-			<trans-unit id="example.icon-group.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>Icon Group</source>
 			</trans-unit>
-			<trans-unit id="example.icon-group.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>Add a group with several icons and text</source>
 			</trans-unit>
 			<trans-unit id="header.label" xml:space="preserve">

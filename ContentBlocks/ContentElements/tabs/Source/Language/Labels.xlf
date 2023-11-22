@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="tabs">
 		<header/>
 		<body>
-			<trans-unit id="example.tabs.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>Tabs</source>
 			</trans-unit>
-			<trans-unit id="example.tabs.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>Toggle between hiding and showing content with tabs</source>
 			</trans-unit>
 			<trans-unit id="header.label" xml:space="preserve">

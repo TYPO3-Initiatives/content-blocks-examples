@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="card-group">
 		<header/>
 		<body>
-			<trans-unit id="example.card-group.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>Card Group</source>
 			</trans-unit>
-			<trans-unit id="example.card-group.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>Add a group with several cards</source>
 			</trans-unit>
 			<trans-unit id="header.label" xml:space="preserve">

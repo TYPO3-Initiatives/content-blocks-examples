@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="cta">
 		<header/>
 		<body>
-			<trans-unit id="example.cta.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>Call to action</source>
 			</trans-unit>
-			<trans-unit id="example.cta.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>Add a call to action button with additional information</source>
 			</trans-unit>
 			<trans-unit id="header.label" xml:space="preserve">

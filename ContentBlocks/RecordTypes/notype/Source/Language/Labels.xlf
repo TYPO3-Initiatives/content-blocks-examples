@@ -3,10 +3,10 @@
 	<file datatype="plaintext" original="messages" source-language="en" product-name="record1">
 		<header/>
 		<body>
-			<trans-unit id="hov.notype.title" xml:space="preserve">
+			<trans-unit id="title" xml:space="preserve">
 				<source>No type record</source>
 			</trans-unit>
-			<trans-unit id="hov.notype.description" xml:space="preserve">
+			<trans-unit id="description" xml:space="preserve">
 				<source>Record with only one type</source>
 			</trans-unit>
 			<trans-unit id="title.label" xml:space="preserve">
