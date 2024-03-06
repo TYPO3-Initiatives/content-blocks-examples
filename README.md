@@ -1,3 +1,5 @@
+# This repository has been merged into the main Content Blocks repo: https://github.com/nhovratov/content-blocks/tree/main/Build/content-blocks-examples
+
 # Example for Content Blocks TYPO3 v12
 
 This a TYPO3 extension, which contains examples for the Content Blocks in version 12.
