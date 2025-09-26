@@ -1,4 +1,4 @@
-# This repository has been merged into the main Content Blocks repo: https://github.com/FriendsOfTYPO3/content-blocks/tree/main/Build/content-blocks-examples
+# This repository has been merged into the main Content Blocks repo: https://github.com/FriendsOfTYPO3/content-blocks/tree/main/Build/content_blocks_examples
 
 # Example for Content Blocks TYPO3 v12
 
